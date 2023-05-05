@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark">Управление пользователями</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Секция мейн-->
+    <main class="site-main">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between" >
+                <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient"><i class="fa-regular fa-user"></i> Добавить пользователя</span>
+                </a>
+            </div>
+            
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Имя</th>
+                            <th>Почта</th>
+                            <th>Пол</th>
+                            <th>Статус</th>
+                            <th>Действие</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mazai</td>
+                            <td>dedmazai@gmail.com</td>
+                            <td>Мужчина</td>
+                            <td>активный</td>
+                            <td>
+                                <a href="#" class="btn border-shadow update">
+                                    <span class="text-gradient"><i class="fa-solid fa-pen"></i></span>
+                                </a>
+                                <a href="#" class="btn border-shadow update">
+                                    <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+
+        </div>
+    </main>
+</body>
+</html>

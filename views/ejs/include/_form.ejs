@@ -1,0 +1,46 @@
+<form action="/api/users" method="POST" id="add-user">
+    <div class="new__user">
+      <div class="ctn">
+          <div class="ct">
+       <div class="form-group">
+          <label for="name" class="text-light">Name</label>
+          <input type="hidden" name="id" value="">
+          <input type="text" name="name" value="" placeholder="Jhon">
+       </div>
+       <div class="form-group">
+          <label for="Email" class="text-light">Email</label>
+          <input type="text" name="email" value="" placeholder="danik@gmail.com">
+       </div>
+       <div class="form-group">
+          <label for="gender" class="text-light">Пол</label>
+          <div class="radio">
+              <input type="radio" name="gender" value="Женщина">
+              <label for="gender" class="text-light">Женщина</label>
+          </div>
+          <div class="radio">
+              <input type="radio" name="gender" value="Мужчина">
+              <label for="gender" class="text-light">Мужчина</label>
+          </div>
+       </div>
+       <div class="form-group">
+          <label for="status" class="text-light">Статус</label>
+          <div class="radio">
+              <input type="radio" name="status" value="Неактивный">
+              <label for="gender" class="text-light">Неактивный</label>
+          </div>
+          <div class="radio">
+              <input type="radio" name="status" value="Активный">
+              <label for="gender" class="text-light">Активный</label>
+          </div>
+        </div>
+          </div>
+          <div class="img">  
+              <img src="img/add-user.png" alt="a">
+          </div>
+      </div>
+          <div class="form-group">
+              <button type="submit" class="btn text-dark">Добавить</button>
+          </div>
+       
+    </div>
+ </form>

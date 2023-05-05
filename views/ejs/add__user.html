@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/addstyle.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark">Управление пользователями</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Секция мейн-->
+    <main class="site-main">
+        <div class="container">
+           <div class="d-flex-justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i>Все пользователи</a>
+                </div>
+           </div> 
+           <div class="form-title">
+            <h2>Новый пользователь</h2>
+            <span class="text-light">Форма добавления новго пользователя</span>
+           </div>
+
+           <form action="POST" id="update-user">
+              <div class="new__user">
+                <div class="ctn">
+                    <div class="ct">
+                 <div class="form-group">
+                    <label for="name" class="text-light">Name</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="name" value="" placeholder="Jhon">
+                 </div>
+                 <div class="form-group">
+                    <label for="Email" class="text-light">Email</label>
+                    <input type="text" name="email" value="" placeholder="dedmazai@gmail.com">
+                 </div>
+                 <div class="form-group">
+                    <label for="gender" class="text-light">Пол</label>
+                    <div class="radio">
+                        <input type="radio" name="gender" value="Женщина">
+                        <label for="gender" class="text-light">Женщина</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="gender" value="Мужчина">
+                        <label for="gender" class="text-light">Мужчина</label>
+                    </div>
+                 </div>
+                 <div class="form-group">
+                    <label for="status" class="text-light">Статус</label>
+                    <div class="radio">
+                        <input type="radio" name="status" value="Неактивный">
+                        <label for="gender" class="text-light">Неактивный</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="status" value="Активный">
+                        <label for="gender" class="text-light">Активный</label>
+                    </div>
+                  </div>
+                    </div>
+                    <div class="img">  
+                        <img src="../../assets/img/add-user.png" alt="a">
+                    </div>
+                </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark">Добавить</button>
+                    </div>
+                 
+              </div>
+           </form>
+        
+        </div>
+    </main> 
+</body>
+</html>
